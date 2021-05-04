@@ -13,6 +13,8 @@ services:
         - DB_PORT=5432
         - DB_USER=root
         - DB_PASSWORD=root
+      volumes:
+        - ./custom-theme:/opt/jboss/keycloak/themes/custom-theme
       ports:
         - 8080:8080
       depends_on:
